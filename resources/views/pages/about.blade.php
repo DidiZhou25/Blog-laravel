@@ -22,13 +22,12 @@
         <body style="background-color:#e8e8e8;">
 <h1>Welcome to FilmR</h1>
 <div class="container">
-
-        <div class="card" style="width: 18rem;">
-                <img class="card" src="img/predator.jpg" alt="Card image cap">
+        <div class="card" style="width:400px">
+                <img class="card-img-top" src="img_avatar1.png" alt="Card image">
                 <div class="card-body">
-                  <h5 class="card-title">The Predator</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h4 class="card-title">John Doe</h4>
+                  <p class="card-text">Some example text.</p>
+                  <a href="#" class="btn btn-primary">See Profile</a>
                 </div>
               </div>
 

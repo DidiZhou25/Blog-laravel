@@ -1,11 +1,15 @@
 <?php
 Route::get('/', function (){
-    return view('welcome');
+    return view('welcome' [
+        'name' => 'World'
+    ]);
+
 });
+
+
+
 
 Route::get('/about', function (){
-    return view('pages.about');
+    return view('about');
 });
-
-Route::get('/products/',['uses => ProductsController@index']);
-Route::get('/products/details',['uses => ProductsController@index']);
+?>
