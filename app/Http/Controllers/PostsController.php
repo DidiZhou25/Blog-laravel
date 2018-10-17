@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
 
-class ProductController extends Controller
+class PostsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,10 @@ class ProductController extends Controller
      */
     public function index()
     {
-       return view ('products.index');
+        //
+
+       $articles = Post::all();
+        return view("posts.index", compact('articles'));
     }
 
     /**
@@ -24,6 +28,7 @@ class ProductController extends Controller
     public function create()
     {
         //
+        return view('posts.create');
     }
 
     /**
@@ -46,6 +51,8 @@ class ProductController extends Controller
     public function show($id)
     {
         //
+        $articles = Post::find($id);
+        return view("posts.article", compact('articles'));
     }
 
     /**
